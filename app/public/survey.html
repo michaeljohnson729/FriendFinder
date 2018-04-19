@@ -162,12 +162,13 @@
                 for (var i = 0; i < data.length; i++) {
                     var newFriend = $("<div>");
                     $(newFriend).append("<h1>Your New Friend!<h1>")
-                    $(newFriend).append("<h2>" + data[0].name + "</h2>");
-                    $(newFriend).append("<img src='" + data[0].profPic + "' alt='profile picture'>")
+                    $(newFriend).append("<h2>" + data[1].name + "</h2>");
+                    $(newFriend).append("<img src='" + data[1].profPic + "' alt='profile picture'>")
                     $("#friend-info").append(newFriend);
                 }
+                displayModal();
             })
-            displayModal();
+            
 
         });
         function displayModal() {
