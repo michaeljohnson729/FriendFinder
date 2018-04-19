@@ -165,19 +165,17 @@
                     $(newFriend).append("<h2>" + data[1].name + "</h2>");
                     $(newFriend).append("<img src='" + data[1].profPic + "' alt='profile picture'>")
                     $("#friend-info").append(newFriend);
-                }
-                displayModal();
+                };
             })
-            
+            displayModal();
 
         });
         function displayModal() {
             var modal = document.getElementById('myModal');
             var btn = document.getElementById("add-btn");
             var span = document.getElementsByClassName("close")[0];
-            btn.onclick = function () {
-                modal.style.display = "block";
-            }
+            modal.style.display = "block";
+
             span.onclick = function () {
                 modal.style.display = "none";
             }
